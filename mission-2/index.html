@@ -12,11 +12,8 @@
 
             <div class="col-6">
                 <h3>iCashier</h3>
-                <div id="itemContainer" class="row">
-                    <!-- Cards will be added here dynamically -->
-                </div>
+                <div id="itemContainer" class="row"></div>
             
-                <!-- Template for the card -->
                 <template id="cardTemplate">
                     <div class="col pb-4">
                         <div class="card" style="width: 10rem;">
@@ -40,8 +37,24 @@
 
             <div class="col-6">
                 <h3>MyChart</h3>
-                <div id="list" class="row"></div>
-                <div id="totalHarga" class="text-center"></div>
+                <table id="cartTable" class="table">
+                    <thead>
+                        <tr>
+                            <th>Nama Barang</th>
+                            <th>Jumlah</th>
+                            <th>Harga Barang</th>
+                            <th>Total Harga</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartTableBody">
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" class="text-end">Total Harga:</td>
+                            <td id="totalHarga"></td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
 
         </div>
