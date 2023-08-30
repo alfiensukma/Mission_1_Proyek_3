@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Latihan JS</title>
+</head>
+<body>
+    <div class="container pt-3">
+        <div class="row">
+
+            <div class="col-6">
+                <h3>iCashier</h3>
+                <div id="itemContainer" class="row">
+                    <!-- Cards will be added here dynamically -->
+                </div>
+            
+                <!-- Template for the card -->
+                <template id="cardTemplate">
+                    <div class="col pb-4">
+                        <div class="card" style="width: 10rem;">
+                            <img src="assets/default.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title" id="namaBarang"></h6>
+                                <p class="card-text" id="hargaBarang"></p>
+                                <div class="text-center">
+                                    <div class="input-group input-group-sm mb-3 ">
+                                        <button class="btn btn-primary" id="minus">-</button>
+                                        <input type="number" class="form-control col-md-2" value="0" id="jumlahBarang">
+                                        <button class="btn btn-primary" id="plus">+</button>
+                                    </div>
+                                    <button class="btn btn-success btn-sm" id="addBarang">Tambah Barang</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+
+            <div class="col-6">
+                <h3>MyChart</h3>
+                <div id="list" class="row">
+                    <div class="col-2">
+                        <img src="assets/default.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="col-6">
+                        <h6>Nama Barang</h6>
+                        <p>Rp. 30.000 x 2</p>
+                    </div>
+                    <div class="col-4 text-center">
+                        <h5>Rp. 60.000</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
