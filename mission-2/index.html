@@ -26,11 +26,11 @@
                                 <p class="card-text" id="hargaBarang"></p>
                                 <div class="text-center">
                                     <div class="input-group input-group-sm mb-3 ">
-                                        <button class="btn btn-primary" id="minus">-</button>
+                                        <button class="btn btn-primary minus">-</button>
                                         <input type="number" class="form-control col-md-2" value="0" id="jumlahBarang">
-                                        <button class="btn btn-primary" id="plus">+</button>
+                                        <button class="btn btn-primary plus">+</button>
                                     </div>
-                                    <button class="btn btn-success btn-sm" id="addBarang">Tambah Barang</button>
+                                    <button class="btn btn-success btn-sm addButton">Tambah Barang</button>
                                 </div>
                             </div>
                         </div>
@@ -40,18 +40,8 @@
 
             <div class="col-6">
                 <h3>MyChart</h3>
-                <div id="list" class="row">
-                    <div class="col-2">
-                        <img src="assets/default.png" class="card-img-top" alt="...">
-                    </div>
-                    <div class="col-6">
-                        <h6>Nama Barang</h6>
-                        <p>Rp. 30.000 x 2</p>
-                    </div>
-                    <div class="col-4 text-center">
-                        <h5>Rp. 60.000</h5>
-                    </div>
-                </div>
+                <div id="list" class="row"></div>
+                <div id="totalHarga" class="text-center"></div>
             </div>
 
         </div>
